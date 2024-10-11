@@ -246,7 +246,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       id: lc
       name: Link Checker
@@ -504,7 +504,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       id: awk_gomod
       name: Find go version
@@ -825,7 +825,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       name: run tests
       run: go test -json ./... > test.json
@@ -1344,7 +1344,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - continue-on-error: true
       id: awk_gomod
       name: Find go version
