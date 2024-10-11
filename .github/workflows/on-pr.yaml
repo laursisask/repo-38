@@ -848,7 +848,7 @@ jobs:
     - continue-on-error: true
       if: always()
       name: Annotate tests
-      uses: guyarb/golang-test-annoations@v0.5.1
+      uses: guyarb/golang-test-annoations@v0.8.0
       with:
         test-results: test.json
     - name: after
