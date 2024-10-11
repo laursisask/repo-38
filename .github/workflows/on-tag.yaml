@@ -276,13 +276,13 @@ jobs:
           }}
     - continue-on-error: true
       name: Login to DockerHub
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         password: ${{ secrets.DOCKERHUB_TOKEN_WEAVEWORKSKUREDCI }}
         username: ${{ secrets.DOCKERHUB_USERNAME_WEAVEWORKSKUREDCI }}
     - continue-on-error: true
       name: Login to ghcr.io
-      uses: docker/login-action@v2
+      uses: docker/login-action@v3
       with:
         password: ${{ secrets.KURED_WEAVE_GHCR_BOT_TOKEN }}
         registry: ghcr.io
