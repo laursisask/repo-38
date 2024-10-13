@@ -34,7 +34,7 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
+      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
       # https://github.com/actions/checkout/issues/1169
       - run: git config --system --add safe.directory '*'
       - id: goversion
